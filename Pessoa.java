@@ -1,5 +1,10 @@
 public class Pessoa {
-    public Pessoa(String nome, double numConta, double saldo, String tConta) {
+    public Pessoa(String nome, double numConta, double saldo ) {
+        this.nome = nome;
+        this.numConta = numConta;
+        this.saldo = saldo;
+
+    }public Pessoa(String nome, double numConta, double saldo, String tConta) {
         this.nome = nome;
         this.numConta = numConta;
         this.saldo = saldo;
@@ -44,4 +49,24 @@ public class Pessoa {
     public void setSaldo(float saldo) {
         this.saldo = saldo;
     }
+
+    public double sacar(double val){
+        return saldo -= val;
+    }
+    public double depositar(double val){
+        return saldo +=val;
+    }
+    public double transferir(double val){
+        return saldo -=val;
+    }
+    public double mostrarSaldo(){
+        return getSaldo();
+    }
+    public double investir(double val){
+        return saldo -=val;
+    }
+    public double contaPoupanca(double val){
+        return saldo -=val;
+    }
+
 }

@@ -1,6 +1,8 @@
 public class Pf extends Pessoa {
     private double cpf;
 
+
+
     public double getCpf() {
         return cpf;
     }
@@ -13,5 +15,13 @@ public class Pf extends Pessoa {
         super(nome, numConta, saldo, tConta);
 
     }
+    public Pf(String nome, double numConta, double saldo, double cpf) {
+        super(nome, numConta, saldo);
+
+    }
+    public Pf() {
+
+    }
+
 }
 
